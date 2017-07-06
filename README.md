@@ -1,2 +1,6 @@
 # td-wedding
-wedding site 
+wedding site
+
+```bash
+  babel --presets react ./container.js -o ../dist/container.js
+```
