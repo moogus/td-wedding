@@ -181,14 +181,20 @@
                 </p>
                 <div class="row">
                   <style>
-                    .btn-addeventatc {
+                    .btn-details {
                       font-family: 'Playfair Display',serif !important;
                       font-size: 16px !important;
+
+                    }
+                    .addeventatc {
                       margin: 1em 0 2.2em 0;
+                    }
+                    .margin-top2 {
+                      margin-top: 2em;
                     }
                   </style>
                   <div  title="Add to Calendar"
-                        class="btn btn-sm btn-primary addeventatc btn-addeventatc"
+                        class="btn btn-sm btn-primary addeventatc btn-details"
                         data-dropdown-x="auto"
                         data-dropdown-y="auto">
                     Add to Calendar
@@ -206,32 +212,7 @@
                   </div>
                 </div>
                 <div class="row ceremony-reception-row text-center">
-                    <style>
-                    .map_loader:link, .map_loader:visited {
-                      display: inline-block;
-                      padding: 16px 32px;
-                      text-decoration: none;
-                      color: inherit;
-                      text-align: center;
-                      cursor: pointer;
-                      white-space: nowrap;
-                      border-radius: 36px;
-                    }
-                    .map_loader:hover, .map_loader:active {
-                      color: #000;
-                      background-color: #DEDEDE;
-                    }
-                    </style>
-                    <!-- /end .col-sm-4 -->
                     <div class="col-sm-12">
-                      <a href="#"
-                        data-slide="slide"
-                        data-target="#rsvp-panel"
-                        role="button"
-                        aria-expanded="false"
-                        class='map_loader'
-                        style='color:#333; text-decoration: none;'
-                        >
                           <h3 class="no-margin-bottom" style="">
                               Ceremony &#38; Reception
                           </h3>
@@ -241,10 +222,20 @@
                               The Estate Office Manor Yard<br/>
                               Bridport, Dorset DT6 6HG
                           </p>
-                        </a>
                     </div>
                 </div>
                 <!-- /end .row -->
+
+                <div class="row">
+                  <a href="#"
+                    data-slide="slide"
+                    data-target="#rsvp-panel"
+                    role="button"
+                    aria-expanded="false"
+                    class='btn btn-sm btn-primary btn-details margin-top2'
+                    style='text-decoration: none;'
+                    ><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;Directions</a>
+                </div>
             </div>
             <!-- /end .container for #rsvp-->
         </section>
@@ -377,7 +368,12 @@
                         Saturday, Febuary 3, 2018 at 3 pm at Tithe Barn Symondsbury Estate, Bridport, Dorset DT6 6HG.
                     </p>
                     <p>
-                        <a class="btn btn-sm btn-primary" href="http://bit.ly/2sYRGTA" target="_blank" title="Google Maps opens in a new tab/window">Directions/Map</a>
+                        <a
+                          class="btn btn-sm btn-primary"
+                          href="http://bit.ly/2sYRGTA"
+                          target="_blank" title="Google Maps opens in a new tab/window">
+                          <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;Open in maps
+                        </a>
                     </p>
                 </div>
                 <!-- /end #bodyContent the id used by Google Maps -->
@@ -440,6 +436,9 @@
 
     <!-- AddEvent -->
     <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
+      <!-- fontawesome -->
+    <script src="https://use.fontawesome.com/c338b06492.js"></script>
 <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js" type="text/javascript"></script>
 
