@@ -1,36 +1,535 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-      <meta name="theme-color" content="#000000">
-      <link rel="manifest" href="/manifest.json">
-      <!-- ICONS :: not required if you put these icons in the root of your domain -->
-      <link rel="icon" href="src/favicon.ico" type="image/x-icon" />
-      <link rel="apple-touch-icon" sizes="57x57" href="src/apple-touch-icon-57x57.png">
-      <link rel="apple-touch-icon" sizes="60x60" href="src/apple-touch-icon-60x60.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="src/apple-touch-icon-72x72.png">
-      <link rel="apple-touch-icon" sizes="76x76" href="src/apple-touch-icon-76x76.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="src/apple-touch-icon-114x114.png">
-      <link rel="apple-touch-icon" sizes="120x120" href="src/apple-touch-icon-120x120.png">
-      <link rel="apple-touch-icon" sizes="144x144" href="src/apple-touch-icon-144x144.png">
-      <link rel="apple-touch-icon" sizes="152x152" href="src/apple-touch-icon-152x152.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="src/apple-touch-icon-180x180.png">
-      <link rel="icon" type="image/png" href="src/favicon-16x16.png" sizes="16x16">
-      <link rel="icon" type="image/png" href="src/favicon-32x32.png" sizes="32x32">
-      <link rel="icon" type="image/png" href="src/favicon-96x96.png" sizes="96x96">
-      <link rel="icon" type="image/png" href="src/android-chrome-192x192.png" sizes="192x192">
-      <meta name="msapplication-square70x70logo" content="src/smalltile.png" />
-      <meta name="msapplication-square150x150logo" content="src/mediumtile.png" />
-      <meta name="msapplication-square310x310logo" content="src/largetile.png" />
-      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-      <script src="https://use.fontawesome.com/c338b06492.js"></script>
-      <title>Tina and Darren are getting married February 3rd 2018</title>
-      <link href="src/photo-app/css/main.db83ec10.css" rel="stylesheet">
-   </head>
-   <body>
-      <noscript>You need to enable JavaScript to run this app.</noscript>
-      <div id="root"></div>
-      <script type="text/javascript" src="src/photo-app/js/main.320f6829.js"></script>
-   </body>
+<!--[if IE 8 ]><html class="ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="ie9 no-js" lang="en"><![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html lang="en" class="no-js"><!--<![endif]-->
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="google" content="notranslate">
+   <meta http-equiv="Content-Language" content="en">
+
+   <title>Tina and Darren are getting married February 3rd 2018</title>
+   <meta name="description" content="Tina and Darren are getting married February 3rd 2018">
+
+   <!-- Google Fonts -->
+   <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+   <!-- custom bootstrap build, use the link in the file or the json document to upgrade, this has different breakpoints -->
+   <link rel="stylesheet" href="src/assets/css/bootstrap.min.css">
+
+   <!-- core theme css -->
+   <link rel="stylesheet" href="src/assets/css/swirly-love-theme.min.css">
+
+   <!-- custom css for your styles -->
+   <link rel="stylesheet" href="src/assets/css/custom-styles.css">
+
+   <!-- ICONS :: not required if you put these icons in the root of your domain -->
+   <link rel="icon" href="src/favicon.ico" type="image/x-icon" />
+   <link rel="apple-touch-icon" sizes="57x57" href="src/apple-touch-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="src/apple-touch-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="src/apple-touch-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="src/apple-touch-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="src/apple-touch-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="src/apple-touch-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="src/apple-touch-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="src/apple-touch-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="src/apple-touch-icon-180x180.png">
+   <link rel="icon" type="image/png" href="src/favicon-16x16.png" sizes="16x16">
+   <link rel="icon" type="image/png" href="src/favicon-32x32.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="src/favicon-96x96.png" sizes="96x96">
+   <link rel="icon" type="image/png" href="src/android-chrome-192x192.png" sizes="192x192">
+   <meta name="msapplication-square70x70logo" content="src/smalltile.png" />
+   <meta name="msapplication-square150x150logo" content="src/mediumtile.png" />
+   <meta name="msapplication-square310x310logo" content="src/largetile.png" />
+
+</head>
+<!-- =========== body class :: pink-blue (man & woman) :: blue-blue (two men) :: pink-pink (two women) ============= -->
+<!-- =========== body class :: green / purple / ivory / gold :: no class required for white ============= -->
+<!-- =========== body class :: header-left for left side navigation // header-right for right side navigation  // header-top for top navigation ============= -->
+<body data-spy="scroll" data-target=".nav-wrapper" class="pink-blue header-right">
+    <!-- =========== preloader ============= -->
+    <div id="preloader" aria-hidden="true">
+        <div class="heartbeat-loader">
+            <span class="ti ti-heart ti-3x"></span>
+        </div>
+    </div>
+    <!-- /end #preloader -->
+    <!-- =========== screen reader only ============= -->
+    <a class="sr-only sr-only-focusable" href="#nav">Skip Navigation</a>
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+    <!-- =========== begin .nav-wrapper-mobile ============= -->
+    <nav  class="nav-wrapper visible-xs nav-wrapper-mobile">
+        <div class="nav-wrapper-mobile-inner">
+            <div class="nav-wrapper-mobile-vertical-center">
+                <!-- jQuery clones menu here for mobile -->
+            </div>
+            <!-- /end .nav-wrapper-mobile-vertical-center (required for vertical centering) -->
+        </div>
+        <!-- /end .nav-wrapper-mobile-inner (required for vertical centering) -->
+    </nav>
+    <!-- /end .nav -->
+    <!-- =========== end .nav-wrapper-mobile ============= -->
+    <!-- =========== begin .header ============= -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-vertical-center">
+                <!-- begin #nav.nav-wrapper (the menu and initials in the header (top, right, left) -->
+                <nav id="nav" class="nav-wrapper">
+                    <!-- begin .menu-toggle -->
+                    <a href="#" class="menu-toggle" aria-label="navigation menu" role="button" aria-controls="nav" aria-expanded="false">
+                        <span class="veggieburger">
+                        <span class="lines"></span>
+                        </span>
+                        <!-- /end .veggieburger-->
+                    </a>
+                    <!-- end .menu-toggle-->
+                    <!-- header-initials :: notice the br tags and the class -->
+                    <a class="scroll" href="#begin">
+                        <h3 class="header-initials text-center">
+                            <!-- INITIALS -->
+                            T<br class="visible-xs"/>&#38;<br class="visible-xs"/>D
+                        </h3>
+                    </a>
+                    <!-- /end header initials-->
+                    <ul class="nav">
+                        <li class="active"><a href="#begin">Begin</a></li>
+                        <li><a href="#rsvp">Details</a></li>
+                        <li><a href="#gifts">Gifts</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <!-- end .nav -->
+                </nav>
+                <!-- end #nav.nav-wrapper -->
+            </div>
+            <!-- end .header-vertical-center (required for vertical centering) -->
+        </div>
+        <!-- end .header-inner (required for vertical centering) -->
+        <!-- embellishments in the header -->
+        <span class="header-embellishment-top" aria-hidden="true"></span>
+        <span class="header-embellishment-bottom" aria-hidden="true"></span>
+    </header>
+    <!-- =========== end .header ============= -->
+    <div class="page-container clearfix" id="content" role="main">
+        <!-- =========== begin #begin ============= -->
+        <!-- this masthead uses several background images AND several regular images in the source of a transparent .gif that matches the height and width of the natural image.
+            This allows for background image with background size 100% to scale according to the natural size and allows for different images to be swapped
+            out with CSS based on the viewport size -->
+        <div class="feature-section feature-odd make-page-height" id="begin">
+            <div class="masthead-graphic" aria-hidden="true">
+                <img class="masthead-img-xxs" aria-hidden="true" src="src/assets/images/masthead-xxs-spacer.gif" alt="add a description to get better accessibility" />
+                <img class="masthead-img-xs" aria-hidden="true" src="src/assets/images/masthead-xs-spacer.gif" alt="add a description to get better accessibility" />
+                <img class="masthead-img-sm" aria-hidden="true" src="src/assets/images/masthead-sm-spacer.gif" alt="add a description to get better accessibility" />
+                <img class="masthead-img-lg" aria-hidden="true" src="src/assets/images/masthead-lg-spacer.gif" alt="add a description to get better accessibility" />
+                <img class="masthead-img-hg" aria-hidden="true" src="src/assets/images/masthead-hg-spacer.gif" alt="add a description to get better accessibility" />
+                <div class="masthead-graphic-birds" aria-hidden="true"></div>
+            </div>
+            <!-- /end .masthead-graphic -->
+            <!-- =========== begin .the-couple-content =========== -->
+            <div class="container the-couple-content">
+                <!-- begin .row for the couple -->
+                <section class="row text-center the-couple-row">
+                    <div class="col-lg-6">
+                        <div class="the-couple-image-holder" style='margin-top:-1em`;'>
+                            <span class="the-couple-mask" aria-hidden="true">
+                                <!--this mask background image changes per color specified in the body tag -->
+                            </span>
+                            <img class="the-couple-image" src="src/assets/couple-images/tina_darren.jpg" alt="Tina &#38; Darren" />
+                        </div>
+                        <!-- /end .the-couple-image-holder -->
+                    </div>
+                    <!-- end col-lg-6 -->
+                    <div class="col-lg-6 the-couple-text-wrapper">
+                        <h1 class="the-couple-name">Tina &#38; Darren</h1>
+                        <!-- uses the-couple-name fittext.js -->
+                        <p class="text-uppercase the-couple-statement">Are getting married</p>
+                        <!-- uses the-couple-state fittext.js -->
+                        <h2 class="the-couple-date h3">February 3, 2018</h2>
+                    </div>
+                    <!-- /end col-lg-6 -->
+                </section>
+                <!-- /end .row for the couple -->
+            </div>
+            <!-- /end .container.the-couple-content -->
+        </div>
+        <!-- =========== /end #begin ============= -->
+
+        <!-- ========== divider EVEN ============== -->
+        <div class="divider divider-even" aria-hidden="true">
+            <!-- divider element EVEN -->
+        </div>
+
+        <!-- ========== divider ODD ============== -->
+        <div class="divider divider-odd">
+            <!-- divider element ODD -->
+        </div>
+
+        <!-- ========== divider EVEN ============== -->
+        <div class="divider divider-even" aria-hidden="true">
+            <!-- divider element EVEN -->
+        </div>
+
+        <!-- ========== begin #rsvp ============== -->
+        <section class="feature-section make-page-height feature-even" id="rsvp">
+            <div class="container vertical-align-middle text-center">
+                <h3 class="theme-title">Save the Date</h3>
+                <p class="feature-section-intro-text">
+                  Tina and Darren request the pleasure of your company at the celebration of our marriage on Saturday 3rd February 2018.
+                  <br><br>
+                  Please RSVP by 15th October 2017.
+                </p>
+                <div class="row">
+                  <style>
+                    .btn-details {
+                      font-family: 'Playfair Display',serif !important;
+                      font-size: 16px !important;
+
+                    }
+                    .addeventatc {
+                      margin: 1em 0 2.2em 0;
+                    }
+                    .margin-top2 {
+                      margin-top: 2em;
+                    }
+                  </style>
+                  <div  title="Add to Calendar"
+                        class="btn btn-sm btn-primary addeventatc btn-details"
+                        data-dropdown-x="auto"
+                        data-dropdown-y="auto">
+                    Add to Calendar
+                    <span class="start">03/02/2018</span>
+                    <span class="end">03/02/2018</span>
+                    <span class="all_day_event">true</span>
+                    <span class="timezone">Europe/London</span>
+                    <span class="title">Tina and Darren wedding</span>
+                    <span class="description">Tina and Darren request the pleasure of your company at the celebration of our marriage.</span>
+                    <span class="location">The Tithe Barn, Mill Ln, Symondsbury, Bridport, DT6 6HG, UK</span>
+                    <span class="date_format">DD/MM/YYYY</span>
+                    <span class="organizer">Tina and Darren</span>
+                    <span class="organizer_email">tina.darren.wedding@gmail.com</span>
+                    <span class="client">aEVLXivjSzfDULSdqmrs29605</span>
+                  </div>
+                </div>
+                <div class="row ceremony-reception-row text-center">
+                    <div class="col-sm-12">
+                          <h3 class="no-margin-bottom" style="">
+                              Ceremony &#38; Reception
+                          </h3>
+                          <p class='no-margin-bottom'>
+                              <strong>Tithe Barn</strong><br/>
+                              Symondsbury Estate<br/>
+                              The Estate Office Manor Yard<br/>
+                              Bridport, Dorset DT6 6HG
+                          </p>
+                    </div>
+                </div>
+                <!-- /end .row -->
+
+                <div class="row">
+                  <a href="#"
+                    data-slide="slide"
+                    data-target="#rsvp-panel"
+                    role="button"
+                    aria-expanded="false"
+                    class='btn btn-sm btn-primary btn-details margin-top2'
+                    style='text-decoration: none;'
+                    ><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;Directions</a>
+                </div>
+            </div>
+            <!-- /end .container for #rsvp-->
+        </section>
+        <!-- ========== /end #rsvp ============== -->
+
+        <!-- ========== divider ODD ============== -->
+        <div class="divider divider-odd" aria-hidden="true">
+            <!-- divider element ODD -->
+        </div>
+
+        <!-- ========== begin #gifts ============== -->
+        <section class="feature-section make-page-height feature-odd text-center" id="gifts">
+            <div class="container vertical-align-middle">
+                <h2 class="theme-title">Your presence at our wedding is all that we wish for...</h2>
+                <p class="feature-section-intro-text">
+                  We do not have a gifting list<br>
+                  Our house is set with nothing missed<br>
+                  We’d like to go on honeymoon<br>
+                  A place for us as bride and groom<br>
+                  To receive a small donation<br>
+                  To send us to our dream location<br>
+                  Would be amazing!
+                </p>
+            </div>
+            <!-- /end .container this section-->
+        </section>
+        <!-- ========== /end #gifts ============== -->
+
+        <!-- ========== divider EVEN ============== -->
+        <div class="divider divider-even" aria-hidden="true">
+            <!-- divider element EVEN -->
+        </div>
+
+        <!-- ========== begin #gallery ============== -->
+        <section class="feature-section feature-even" id="gallery">
+          <style>
+          .thumbnail {
+            width: 150px;
+          }
+          </style>
+            <div class="container">
+                <h2 class="theme-title">Photo Gallery</h2>
+                <ul class="sort">
+                    <li class="active"><a href="#" data-filter="*">All</a></li>
+                    <li><a href="#" data-filter=".us">Memories Of Us</a></li>
+                    <li><a href="#" data-filter=".venue">Venue</a></li>
+                    <!--<li><a href="#" data-filter=".wedding">Wedding</a></li>
+                    <li><a href="#" data-filter=".party">Reception</a></li>-->
+                </ul>
+                <ul class="row row-masonry simple-gallery pop-gallery">
+                    <li class="grid-sizer"></li>
+                    <li class="gutter-sizer"></li>
+                    <li class="img-treatment us">
+                        <a class="pop-gallery-img popup-indicator"
+                          href="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_1.jpg">
+                        <img class='thumbnail'
+                        src="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_1.jpg" />
+                        </a>
+                    </li>
+                    <li class="img-treatment us">
+                        <a class="pop-gallery-img popup-indicator"
+                          href="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_2.JPG">
+                        <img class='thumbnail'
+                          src="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_2.JPG" />
+                        </a>
+                    </li>
+                    <li class="img-treatment venue">
+                        <a class="pop-gallery-img popup-indicator"
+                          href="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/tithe_barn2.jpg">
+                        <img class='thumbnail'
+                          src="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/tithe_barn2.jpg" />
+                        </a>
+                    </li>
+                    <li class="img-treatment us">
+                      <a class="pop-gallery-img popup-indicator"
+                        href="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_3.JPG">
+                      <img class='thumbnail'
+                      src="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_3.JPG" />
+                      </a>
+                    </li>
+                    <li class="img-treatment venue">
+                        <a class="pop-gallery-img popup-indicator"
+                          href="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/inside_tithe.jpg">
+                        <img class='thumbnail'
+                          src="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/inside_tithe.jpg" />
+                        </a>
+                    </li>
+                    <li class="img-treatment us">
+                      <a class="pop-gallery-img popup-indicator"
+                        href="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_4.JPG">
+                      <img class='thumbnail'
+                      src="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_4.JPG" />
+                      </a>
+                    </li>
+                    <li class="img-treatment us">
+                      <a class="pop-gallery-img popup-indicator"
+                        href="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_5.JPG">
+                      <img class='thumbnail'
+                      src="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_5.JPG" />
+                      </a>
+                    </li>
+                    <li class="img-treatment us">
+                      <a class="pop-gallery-img popup-indicator"
+                        href="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_6.JPG">
+                      <img class='thumbnail'
+                      src="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_6.JPG" />
+                      </a>
+                    </li>
+                    <li class="img-treatment venue">
+                        <a class="pop-gallery-img popup-indicator"
+                          href="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/tithe_barn.jpg">
+                        <img class='thumbnail'
+                          src="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/tithe_barn.jpg" />
+                        </a>
+                    </li>
+                    <li class="img-treatment us">
+                      <a class="pop-gallery-img popup-indicator"
+                        href="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_7.JPG">
+                      <img class='thumbnail'
+                      src="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_7.JPG" />
+                      </a>
+                    </li>
+                    <li class="img-treatment us">
+                      <a class="pop-gallery-img popup-indicator"
+                        href="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_8.JPG">
+                      <img class='thumbnail'
+                      src="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_8.JPG" />
+                      </a>
+                    </li>
+                    <li class="img-treatment us">
+                      <a class="pop-gallery-img popup-indicator"
+                        href="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_9.JPG">
+                      <img class='thumbnail'
+                      src="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_9.JPG" />
+                      </a>
+                    </li>
+                    <li class="img-treatment us">
+                      <a class="pop-gallery-img popup-indicator"
+                        href="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_10.JPG">
+                      <img class='thumbnail'
+                      src="https://raw.githubusercontent.com/moogus/td-wedding/master/src/assets/gallery_images/us_10.JPG" />
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- ========== /end #gallery ============== -->
+
+        <!-- ========== divider ODD ============== -->
+        <div class="divider divider-odd" aria-hidden="true">
+            <!-- divider element ODD -->
+        </div>
+
+        <!-- ========== begin #contact ============== -->
+        <section class="feature-section feature-odd make-page-height" id="contact">
+            <div class="container vertical-align-middle">
+                <h3 class="theme-title">Get in Touch</h3>
+                <p class="feature-section-intro-text">
+                  Please contact us by email at <a
+                                                  href="mailto:tina.darren.wedding@gmail.com"
+                                                  class="link-underline color-inherit-link">
+                                                    tina.darren.wedding@gmail.com
+                                                </a>
+                </p>
+                <ul class="list-inline text-center color-inherit-link social-contact-list">
+                    <li>
+                      <a href="https://twitter.com/symweddings?lang=en" class="ti ti-twitter">
+                        <span class="sr-only">Follow Us on Twitter</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/TitheBarnSymondsbury" target="_blank" class="ti ti-facebook">
+                        <span class="sr-only">Follow Us on Facebook</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/explore/locations/411509288/symondsbury-estate-weddings/" target="_blank" class="ti ti-instagram">
+                        <span class="sr-only">Follow Us on Instagram</span>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /end .container for #contact-->
+        </section>
+        <!-- ========== end #contact ============== -->
+
+
+        <!-- ========== divider-last-even LAST following a .feature-odd ============== -->
+        <div class="divider divider-last-even" aria-hidden="true">
+            <!-- divider element LAST -->
+        </div>
+
+
+    </div>
+    <!-- =========================== /end .page-container =========================== -->
+
+        <!-- ========== BEGIN MAP ONLY CONTENTS ============== -->
+        <!-- ===================================================
+            Enter the location in the div below exactly as formated
+            =================================================== -->
+        <div id="location" class="hide">The Tithe Barn, Mill Ln, Symondsbury, Bridport, DT6 6HG, UK</div>
+        <!-- ===================================================
+            Change the content in the Google Map Info Notice Box :: see below
+            =================================================== -->
+        <div class="hide">
+            <div id="info-content">
+                <div id="siteNotice"></div>
+                <!-- ========== Change Title ============== -->
+                <h3 id="firstHeading" class="theme-title">Ceremony &#38; Reception</h3>
+                <div id="bodyContent" class="text-center">
+                    <!-- ========== Change Paragraph content INCLUDING THE LINK map url ============== -->
+                    <p>
+                        Saturday, February 3, 2018 at 3 pm at Tithe Barn Symondsbury Estate, Bridport, Dorset DT6 6HG.
+                    </p>
+                    <p>
+                        <a
+                          class="btn btn-sm btn-primary"
+                          href="http://bit.ly/2sYRGTA"
+                          target="_blank" title="Google Maps opens in a new tab/window">
+                          <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;Open in maps
+                        </a>
+                    </p>
+                </div>
+                <!-- /end #bodyContent the id used by Google Maps -->
+            </div>
+            <!-- /end #info-content -->
+        </div>
+        <!-- /end .hide -->
+        <!-- ========== /end #Info Notice box ============== -->
+        <!-- ========== END MAP ONLY CONTENTS ============== -->
+
+
+        <!-- ========== begin #rsvp-panel containing the form (contents for map in the html above) ============== -->
+        <div class="slide-panel" id="rsvp-panel">
+            <a href="#" class="close ti ti-close">
+                <!--themify icon font for close icon -->
+            </a>
+            <div class="container">
+                <h3 class="theme-title" style="margin-bottom: 1em">Join Us...</h3>
+
+            </div>
+            <!--/ end .container -->
+            <!-- MAP GOES HERE -->
+            <div id="map-container">
+                <!-- map goes here -->
+            </div>
+            <!-- slide back to the top of the panel  -->
+            <a href="#" class="go-to-top scroll-panel-top"><span class="ti ti-arrow-up"></span></a>
+        </div>
+        <!-- ========== /end #rsvp-panel ============== -->
+
+    </div>
+    <!-- /end .slide-down-parent -->
+    <!-- =============================== /end all slide-panels  ================================== -->
+
+    <!-- .go-to-top  -->
+    <a href="#begin" class="go-to-top scroll" id="document-top">
+    <span class="ti ti-arrow-up"></span>
+    </a>
+    <!-- /end .go-to-top -->
+
+    <!-- ========== Scripts ============== -->
+    <!-- jQuery library -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+
+    <!-- Bootstrap plugins -->
+    <script src="src/assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- RSVP jQuery scripts : form.js (ajax form) / validation script / google custom map -->
+    <script src="src/assets/rsvp/rsvp-form-google-map-swirly-love.min.js" type="text/javascript"></script>
+
+    <!-- Vendor and Custom main scripts -->
+    <script src="src/assets/js/swirly-love.js" type="text/javascript"></script>
+
+    <!-- Your Custom JS -->
+    <script src="src/assets/js/your-custom.js" type="text/javascript"></script>
+
+    <!-- Google Map API -->
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBWMd65c8Z_XcdIMyMVjf0niYCSPMDr-FI"></script>
+
+    <!-- AddEvent -->
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
+      <!-- fontawesome -->
+    <script src="https://use.fontawesome.com/c338b06492.js"></script>
+<!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js" type="text/javascript"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js" type="text/javascript"></script>
+
+    <script src="src/dist/container.js" type="text/javascript"></script>
+  -->
+</body>
 </html>
